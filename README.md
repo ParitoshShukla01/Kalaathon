@@ -31,4 +31,4 @@ Tech Used In Kalaathon: -
 
 12.Glide - For Image loading.
 
-https://github.com/ParitoshShukla01/Kalaathon/issues/1#issue-656940297
+Screenshots: https://github.com/ParitoshShukla01/Kalaathon/issues/1#issue-656940297
