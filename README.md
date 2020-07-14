@@ -30,3 +30,5 @@ Tech Used In Kalaathon: -
 11.Exoplayer - For video streaming.
 
 12.Glide - For Image loading.
+
+https://github.com/ParitoshShukla01/Kalaathon/issues/1#issue-656940297
