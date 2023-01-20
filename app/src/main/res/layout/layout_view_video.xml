@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteCardColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/relLayout1"
+                    android:background="@color/whiteCardColor">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/profile_photo_vdo"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="0.5dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/hind_semi_bold"
+                        android:layout_toEndOf="@+id/profile_photo_vdo"
+                        android:layout_marginStart="10dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/username_vdo"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_delete"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:visibility="gone"
+                        android:id="@+id/ivEllipses"/>
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true"
+                    app:strokeColor="@color/grey"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:strokeWidth="0.5dp">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:id="@+id/vdoprogress"
+                        android:theme="@style/CircularProgressWhite"
+                        android:elevation="5dp"/>
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:id="@+id/post_videoexo"
+                        android:focusable="true" />
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relLayout2"
+                android:background="@color/whiteCardColor">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heartLayout"
+                    android:background="@color/whiteCardColor">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/image_heart_red_vdo"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_heart_red"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/image_heart_vdo"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_heart_white"
+                        android:visibility="visible"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/sharevdo"
+                    android:layout_toEndOf="@+id/heartLayout"
+                    android:src="@drawable/ic_share"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/report"
+                    android:layout_toEndOf="@+id/sharevdo"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_ban"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hind_medium"
+                    android:id="@+id/categoryvdo"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout3"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="40dp"
+                android:background="@color/whiteCardColor">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/hind_medium"
+                    android:id="@+id/image_likes_vdo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hind_regular"
+                    android:textSize="18sp"
+                    android:id="@+id/image_caption_vdo"
+                    android:layout_below="@+id/image_likes_vdo"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/hind_regular"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/image_caption_vdo"
+                    android:id="@+id/image_time_posted_vdo"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_bottom_navigationview"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

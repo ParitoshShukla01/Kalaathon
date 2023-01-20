@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".upload.shareActivity"
+    android:background="@color/whiteCardColor">
+
+    <include layout="@layout/snippet_top_share"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="50dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:id="@+id/categorySpinner"/>
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/edit"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:src="@drawable/edit"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true"
+                    app:strokeColor="@color/grey"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    app:strokeWidth="0.5dp">
+
+                    <VideoView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/shareVideo"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/shareimage"
+                        android:src="@drawable/upload_gallery"/>
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:max="100"
+                        android:progress="1"
+                        android:visibility="invisible"
+                        android:progressTint="@color/colorPrimaryDark"
+                        android:indeterminateTint="@color/colorPrimaryDark"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/progress_share"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/reset"
+                    android:id="@+id/reset"
+                    android:fontFamily="@font/hind_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caption :"
+                    android:fontFamily="@font/hind_medium"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:maxLength="250"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hind_regular"
+                    android:background="@drawable/blueborder"
+                    android:id="@+id/description_share"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:id="@+id/set_lucky_code"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/grey_border"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:hint="@string/lucky_code_optional"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/get_lucky_code_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:src="@drawable/instagram"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hashtag"
+                        android:id="@+id/get_lucky_code"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/get_lucky_code_and_get_freebies"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

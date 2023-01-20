@@ -1,0 +1,88 @@
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteCardColor"
+        android:layout_below="@id/rellayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linlayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_username"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:transitionName="profile_transition"
+                    app:civ_border_width="0.5dp"
+                    app:civ_border_color="@color/black"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:src="@drawable/star"
+                    android:id="@+id/badge"
+                    android:layout_alignEnd="@id/profile_image_username"
+                    android:layout_alignTop="@+id/profile_image_username"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/profile_name_underimage"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/profile_description"
+                android:paddingStart="@dimen/dimen_20dp"
+                android:paddingEnd="@dimen/dimen_20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/snippet_top_profile" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/linlayout"
+            android:layout_marginBottom="50dp">
+
+            <include layout="@layout/layout_top_fragment_tabs"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container_imgvdo">
+            </androidx.viewpager.widget.ViewPager>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</merge>

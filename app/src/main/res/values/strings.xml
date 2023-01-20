@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Kalaathon</string>
+    <string name="login_email_hint">Email</string>
+    <string name="otp">Enter O.T.P</string>
+    <string name="mobilenumber">Mobile Number</string>
+    <!-- Firebase database fields -->
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_display_name">display_name</string>
+    <string name="field_description">description</string>
+    <string name="field_user_id">user_id</string>
+    <string name="dbname_photos">photos</string>
+    <string name="dbname_videos">videos</string>
+    <string name="dbname_user_photos">user_photos</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
+    <string name="dbname_video">videos</string>
+    <string name="dbname_user_videos">user_videos</string>
+    <string name="view_post_fragment">View Post</string>
+    <string name="view_video_fragment">View Video</string>
+
+    <string name="field_likes">likes</string>
+    <string name="field_caption">caption</string>
+    <string name="field_date_created">date_created</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_video_id">video_id</string>
+    <string name="field_category">category</string>
+    <string name="field_image_path">image_path</string>
+    <string name="field_video_path">video_path</string>
+    <string name="field_video_thumbnail">thumbnail</string>
+
+    <!-- Bundle arg names -->
+    <string name="activity_number">activity_number</string>
+
+
+    <string name="contestheading">Win Cash Prizes!</string>
+    <string name="contesttext">Top 3 winners from each category stand a chance to win cash prizes worth ₹5000 weekly!</string>
+    <string name="freeheading">Share Your Talent!</string>
+    <string name="freetext">Perform your heart out and showcase it to a massive community.</string>
+    <!-- photo types -->
+    <string name="new_photo">new_photo</string>
+    <string name="profile_photo">profile_photo</string>
+
+    <!--intent extra-->
+    <string name="calling_activity">calling_activity</string>
+    <string name="intent_user">intent_user</string>
+    <string name="home_activity">Home Activity</string>
+    <string name="profile_activity">profile activity</string>
+    <string name="trend_activity">Trend Activity</string>
+
+    <!--Top bar name-->
+    <string name="Likes">Likes</string>
+    <string name="Followers">Followers</string>
+    <string name="Following">Following</string>
+    <string name="default_notification_channel_id">kalaathon.com</string>
+    <!--no posts text message-->
+    <string name="main_feed_head">No Posts To Show</string>
+    <string name="main_feed_text">Follow others to see more posts.</string>
+    <string name="trend_head">We will be back soon</string>
+    <string name="trend_text">Finding this week\'s trending posts…</string>
+    <string name="own_profile_head">Hello There!</string>
+    <string name="own_profile_text">Create and share new posts.</string>
+    <string name="view_profile_head">No Posts Yet</string>
+    <string name="view_profile_text_addtop">hasn\'t posted anything.</string>
+    <!--Account settings name-->
+    <string name="editprofile_s">Edit profile</string>
+    <string name="invite_s">Invite friends</string>
+    <string name="needhelp_s">Need help?</string>
+    <string name="about_s">About</string>
+    <string name="rate_s">Rate us</string>
+    <string name="notification_s">Notification settings</string>
+    <string name="are_you_sure_you_want_to">Are you sure you want to</string>
+    <string name="sign_out_">Sign out ?</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="community_guidelines">Community guidelines</string>
+    <string name="open_source_libraries">Open source libraries</string>
+    <string name="circleimageview">Circleimageview</string>
+    <string name="commons_net">Commons net</string>
+    <string name="exoplayer">Exoplayer</string>
+    <string name="ffmpegandroid">FFmpegAndroid</string>
+    <string name="bottomnavigationviewex">BottomNavigationViewEx</string>
+    <string name="universal_image_loader">Universal Image Loader</string>
+    <string name="volley">Volley</string>
+    <string name="no_user_found">No user found !</string>
+    <string name="contest_entry_fees">Contest entry fees.</string>
+    <string name="tap_here_to_edit_your_photo">Tap here To edit your post</string>
+    <string name="lucky_code_optional">Lucky code (optional)</string>
+    <string name="get_lucky_code_and_get_freebies">Get your lucky code.</string>
+    <string name="zomato_androidphotofilters">AndroidPhotoFilters</string>
+    <string name="reset">Reset</string>
+    <string name="results_for_each_week_announced_on_sunday">Results for each week announced on sunday</string>
+    <string name="glide">Glide</string>
+    <string name="share">Share</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_post">Edit Post</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="post">Post</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="e_mail">E-mail</string>
+    <string name="username">Username</string>
+    <string name="thank_you">Thank You</string>
+    <string name="order_id">Order ID :</string>
+    <string name="how_would_you_like_to_recieve_your_cash_reward">How would you like to receive your cash reward ?</string>
+    <string name="paytm">Paytm</string>
+    <string name="paytm_account_linked_to">Paytm Account linked to:</string>
+    <string name="upi_id">UPI ID:</string>
+    <string name="bank_account">Bank Account</string>
+    <string name="account_number">Account number:</string>
+    <string name="ifsc_code">IFSC Code:</string>
+    <string name="account_holder_s_name">Account Holder\'s Name:</string>
+    <string name="next">Next</string>
+    <string name="upi">UPI</string>
+    <string name="pay_25">Pay ₹25</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="referral_code_optional">Referral code (Optional)</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="verify_number">Verify Number</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="resend_o_t_p">Resend O.T.P</string>
+    <string name="timer">Timer</string>
+    <string name="verify">Verify</string>
+    <string name="proceed">Proceed</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="saturation">Saturation</string>
+    <string name="category">Category</string>
+    <string name="sign_out">Sign Out</string>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="@string/verify_number"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:hint="@string/mobilenumber"
+                android:id="@+id/mobilenum_otp"
+                android:maxLength="10"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:layout_weight="1">
+                <EditText
+                    style="@style/modifiedEditText"
+                    android:inputType="number"
+                    android:id="@+id/otp"
+                    android:maxLines="1"
+                    android:hint="@string/otp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="12sp"
+                android:id="@+id/sendotp"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+                android:text="@string/send_otp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="12sp"
+                android:id="@+id/resendotp"
+                android:visibility="gone"
+                android:background="@android:color/transparent"
+                android:text="@string/resend_o_t_p"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="16sp"
+                android:id="@+id/counter_otp"
+                android:text="@string/timer"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/grey"/>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:id="@+id/verifyotp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="@string/verify" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

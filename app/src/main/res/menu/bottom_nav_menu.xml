@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/house"
+        android:icon="@drawable/ic_house"
+        android:title="">
+
+    </item>
+
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/ic_trend"
+        android:title="">
+
+    </item>
+
+    <item
+        android:id="@+id/upload"
+        android:icon="@drawable/ic_upload"
+        android:title="">
+
+    </item>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="">
+
+    </item>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="">
+
+    </item>
+
+</menu>

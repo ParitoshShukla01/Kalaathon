@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteCardColor"
+    tools:context=".start.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flag"
+        android:layout_margin="@dimen/dimen_50dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_50dp"
+            android:layout_margin="@dimen/dimen_50dp"
+            android:src="@drawable/ic_round"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Made In India"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/flag"
+        android:textSize="@dimen/dimen_20dp"
+        android:fontFamily="@font/hind_medium"
+        android:drawableStart="@drawable/india"/>
+
+</RelativeLayout>

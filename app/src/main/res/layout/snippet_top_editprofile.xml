@@ -1,0 +1,49 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/back_arrow"
+                    android:src="@drawable/ic_back"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/back_arrow"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/hind_semi_bold"
+                    android:text="@string/edit_profile"
+                    android:textSize="20sp"
+                    android:textColor="@color/whiteCardColor"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dp"
+                    android:id="@+id/save_changes_ep"
+                    android:src="@drawable/ic_check"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

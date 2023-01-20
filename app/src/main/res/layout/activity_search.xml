@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteCardColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <include layout="@layout/snippet_searchbar"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/srchprogress"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_user_found"
+            android:layout_below="@+id/relLayout1"
+            android:id="@+id/search_empty"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/hind_medium"
+            android:textSize="24sp"
+            android:visibility="gone"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_below="@+id/relLayout1">
+        </ListView>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_bottom_navigationview"/>
+
+</RelativeLayout>

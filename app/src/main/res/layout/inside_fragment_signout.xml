@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="@string/are_you_sure_you_want_to"
+            android:fontFamily="@font/hind_medium"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+        <TextView
+            style="@style/headerTextPrimary"
+            android:fontFamily="@font/hind_medium"
+            android:textColor="@color/black"
+            android:text="@string/sign_out_"/>
+
+        <Button
+            style="@style/loginButton"
+            android:id="@+id/btnConfirmSignout"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hind_medium"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text="@string/sign_out" />
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/progressBarsignout"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

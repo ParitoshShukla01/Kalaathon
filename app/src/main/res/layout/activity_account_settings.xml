@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/whiteCardColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_middle_viewpager"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout2">
+
+            <include layout="@layout/snippet_top_accountsettings"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout3"
+            android:layout_below="@+id/relLayout2">
+            <include layout="@layout/activity_center_accountsetting"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_below="@id/relLayout3">
+            <Button
+                style="@style/loginButton"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:id="@+id/signout"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/hind_medium"
+                android:text="@string/sign_out"/>
+
+        </RelativeLayout>
+
+
+
+        <include layout="@layout/layout_bottom_navigationview"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

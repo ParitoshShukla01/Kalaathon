@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "kalaathon.com"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 11
+        versionName "1.1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-database:20.0.0'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //co-ordinator layout
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    //bottom navigation animation
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    //circular image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //universal image loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //firebase common
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-dynamic-links:20.1.0'
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    //firebase cloud messaging
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    //volly
+    implementation 'com.android.volley:volley:1.2.0'
+    //Compress Videos
+    implementation 'com.writingminds:FFmpegAndroid:0.3.2'
+    //exo player
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.8'
+    //time
+    implementation 'commons-net:commons-net:3.3'
+    //paytm
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.2'
+    //android hive
+    implementation 'info.androidhive:imagefilters:1.0.7'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.android.play:core:1.10.2'
+}

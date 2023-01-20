@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteCardColor">
+
+
+    <include layout="@layout/pay_fragment"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/paid_hide"
+            android:visibility="visible"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/contestheading"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hind_semi_bold"/>
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/contest"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contesttext"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hind_semi_bold"/>
+
+            <Button
+                style="@style/loginButton"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hind_semi_bold"
+                android:textSize="18sp"
+                android:text="@string/pay_25"
+                android:id="@+id/paidbtnproceed"/>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/paymentprogress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contest_entry_fees"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hind_semi_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/results_for_each_week_announced_on_sunday"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

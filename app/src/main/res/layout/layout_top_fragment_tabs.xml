@@ -1,0 +1,30 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentTop="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/tabsBottom"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    android:background="@color/whiteCardColor"/>
+            </com.google.android.material.appbar.AppBarLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</merge>

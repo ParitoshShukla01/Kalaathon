@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#760933</color>
+    <color name="colorPrimaryDark">#042a37</color>
+    <color name="colorAccent">#9b0c42</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="hashtag">#0371C9</color>
+
+    <!--colros for card-->
+    <color name="grey">@android:color/darker_gray</color>
+    <color name="black">@android:color/black</color>
+
+</resources>
